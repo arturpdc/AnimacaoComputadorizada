@@ -6,6 +6,6 @@ Nome Completo: Artur Pires da Costa
 
 Estrutura do Repositório:
 
-Projeto                              Engine / Linguagem                Descrição breve
-01 - Curva-Bezier                        Unity (C#)                  Visualização interativa de curvas Bézier
-
+Projeto: 01 - Curva-Bezier                                           
+Engine / Linguagem:  Unity (C#)                  
+Descrição breve:  Visualização interativa de curvas Bézier, utilizando pontos de controle para percorrer duas trajetórias diferentes;

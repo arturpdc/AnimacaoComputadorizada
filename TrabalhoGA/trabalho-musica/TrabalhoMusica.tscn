@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cnf6bwlqge2t5"]
+
+[ext_resource type="Script" uid="uid://cu7p82twcdnco" path="res://Equalizador.gd" id="1_2lh37"]
+[ext_resource type="PackedScene" uid="uid://dutpij43ossn1" path="res://BarraMusica.glb" id="1_g1c43"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_bhunq"]
+
+[node name="Node3D" type="Node3D" unique_id=1431562114 node_paths=PackedStringArray("barras")]
+script = ExtResource("1_2lh37")
+barras = NodePath("BarraMusica/Barras")
+
+[node name="BarraMusica" parent="." unique_id=267739414 instance=ExtResource("1_g1c43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09028512, 0, -1.395165)
+
+[node name="Microfone" type="AudioStreamPlayer" parent="." unique_id=485411462]
+stream = SubResource("AudioStreamMicrophone_bhunq")
+autoplay = true
+bus = &"Mic"
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=982532400]
+transform = Transform3D(-4.350131e-08, -0.09792362, 0.9951941, -4.2803796e-09, 0.9951941, 0.09792362, -1, -8.7082526e-16, -4.3711392e-08, 7.53467, 2.9171143, -2.169846)
+
+[editable path="BarraMusica"]
